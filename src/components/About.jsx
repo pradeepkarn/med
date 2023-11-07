@@ -2,6 +2,7 @@ import React from 'react'
 import abtfirst from '../images/aboutleft.jpeg'
 import abtsecond from '../images/abtrt.jpg'
 import backgroundImage from '../images/banner.jpg';
+import docts from '../images/2docs.png';
 import { AiFillCaretRight } from 'react-icons/ai';
 const About = () => {
     return (
@@ -44,7 +45,7 @@ const About = () => {
                             </div>
                         </div>
                         <div>
-                            <img className='min-h-[500px] min-w-[500px] rounded-[50%] object-cover' src={backgroundImage} alt="" />
+                            <img className='min-h-[500px] min-w-[500px] rounded-[50%] object-cover' src={docts} alt="" />
                         </div>
                     </div>
                 </div>
