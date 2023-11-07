@@ -4,7 +4,7 @@ import Logo from "../images/logo.png";
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     return (
-        <div className='bg-transparent p-4 fixed w-full z-10'>
+        <div className='bg-transparent p-2 absolute w-full z-10'>
             <div className='flex justify-between items-center py-[12px] max-w-[1240px] mx-auto'>
                 <div className='text-3xl text-black'>
                     <img className="h-[80px]" src={Logo} alt="logo" />
