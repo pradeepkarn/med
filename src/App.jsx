@@ -1,3 +1,4 @@
+import Slider from 'react-slick';
 import './App.css';
 import About from './components/About';
 import Banner from './components/Banner';
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <Banner/>
     <About/>
+    <Slider/>
     <Features/>
     <Footer/>
     </>

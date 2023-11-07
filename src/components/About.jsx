@@ -1,7 +1,6 @@
 import React from 'react'
 import abtfirst from '../images/aboutleft.jpeg'
-import abtsecond from '../images/abtrt.jpg'
-import backgroundImage from '../images/banner.jpg';
+import abtsecond from '../images/abtrt.jpg';
 import docts from '../images/2docs.png';
 import { AiFillCaretRight } from 'react-icons/ai';
 const About = () => {
@@ -27,8 +26,8 @@ const About = () => {
                         </h1>
                     </div>
                     <div className='flex justify-between items-center'>
-                        <div className='felx flex-col relative'>
-                            <p className='text-prime'>
+                        <div className='felx flex-col relative w-3/4'>
+                            <p className='text-prime text-2xl'>
                                 Dermacare is the only cosmetic clinic in Dubai that focuses exclusively on
                                 Hollywood-level non-surgical aesthetic treatments in Dubai. Using state-of-the-art
                                 technology and a bespoke approach, we have reimagined the traditional strategy for
@@ -45,7 +44,7 @@ const About = () => {
                             </div>
                         </div>
                         <div>
-                            <img className='min-h-[500px] min-w-[500px] rounded-[50%] object-cover' src={docts} alt="" />
+                            <img className='h-[500px] w-[600px] rounded-[50%] object-cover' src={docts} alt="" />
                         </div>
                     </div>
                 </div>
