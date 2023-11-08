@@ -1,7 +1,8 @@
 import React from 'react';
 import backgroundImage from '../images/banner.jpg';
 import face from '../images/face.jpg';
-import { AiFillCompass, AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { FaLocationDot } from 'react-icons/fa6';
 const Features = () => {
     return (
         <div className='px-container'>
@@ -15,7 +16,7 @@ const Features = () => {
                     </button>
                     <div className='w-1/3 mt-5 shadow-lg p-4 rounded-lg bg-[#e9a2a25b]'>
                     OUR LOCATION
-                    <AiFillCompass className='mt-2'/>
+                    <FaLocationDot className='mt-2'/>
                     </div>
                 </div>
                 <div className='w-full  relative'>

@@ -2,10 +2,11 @@ import React from 'react'
 import abtfirst from '../images/aboutleft.jpeg'
 import abtsecond from '../images/abtrt.jpg';
 import docts from '../images/2docs.png';
-import { AiFillCaretRight } from 'react-icons/ai';
+import { AiFillCaretRight, AiFillPlusCircle } from 'react-icons/ai';
+
 const About = () => {
     return (
-        <>
+        <div>
             <div className='min-h-[900px] flex justify-end items-start'>
                 <div className='flex justify-center items-center'>
                     <div className='pt-[30px] pl-[100px] bg-safronLight'>
@@ -17,7 +18,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div style={{zIndex:"10"}}>
                 <div className='px-container'>
                     <div>
                         <h1 className='text-3xl text-prime uppercase'>
@@ -38,18 +39,20 @@ const About = () => {
                                 results, leaving you feeling and looking your best.
                             </p>
                             <div className='py-3 absolute right-0'>
-                            <button className='p-1 px-2 text-white bg-safron rounded-[5px]'>
-                                <span className=' cursor-pointer flex justify-between items-center'>see more <AiFillCaretRight/></span>
-                            </button>
+                                <button className='p-1 px-2 text-white bg-safron rounded-[5px]'>
+                                    <span className=' cursor-pointer flex justify-between items-center'>see more <AiFillCaretRight /></span>
+                                </button>
                             </div>
                         </div>
-                        <div>
+                        <div className='relative'>
+                            <AiFillPlusCircle className='absolute right-[-100px] text-safron text-[200px]'/>
                             <img className='h-[500px] w-[600px] rounded-[50%] object-cover' src={docts} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+            
+        </div>
     )
 }
 
