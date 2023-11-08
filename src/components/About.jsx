@@ -7,18 +7,28 @@ import { AiFillCaretRight, AiFillPlusCircle } from 'react-icons/ai';
 const About = () => {
     return (
         <div>
-            <div className='min-h-[900px] flex justify-end items-start'>
-                <div className='flex justify-center items-center'>
-                    <div className='pt-[30px] pl-[100px] bg-safronLight'>
-                        <img className='max-h-[500px] relative top-[40px]' src={abtfirst} alt="" />
+            <div className='min-h-[700px] flex justify-end items-start relative '>
+                <div className='flex justify-center items-center relative'>
+                    <div style={{ left:0, position:"absolute", borderLeft: "3px solid #1E1D23", borderBottom: "3px solid red",height:"200px",top:"400px"}}></div>
+                    <div style={{  borderBottom: "3px solid #1E1D23",height:"700px"}}>
+                        <p style={{position:"absolute",top:"600px"}}>
+                            <div style={{top:"20px",borderRadius:"20px",marginLeft:"-60px", fontSize:"20px"}} className=' bg-prime px-5 py-1 text-white'>
+                                About Us
+                            </div>
+                        </p>
+                        <div className='pt-[30px] pl-[100px] bg-safronLight'>
+                            <img className='max-h-[500px] relative top-[40px]' src={abtfirst} alt="" />
+                        </div>
                     </div>
+                    
+
 
                     <div className='pt-[50px] pb-[100px] pr-[100px] bg-safron'>
                         <img className=' max-h-[600px] relative top-[40px]' src={abtsecond} alt="" />
                     </div>
                 </div>
             </div>
-            <div style={{zIndex:"10"}}>
+            <div style={{ zIndex: "10" }}>
                 <div className='px-container'>
                     <div>
                         <h1 className='text-3xl text-prime uppercase'>
@@ -45,13 +55,13 @@ const About = () => {
                             </div>
                         </div>
                         <div className='relative'>
-                            <AiFillPlusCircle className='absolute right-[-100px] text-safron text-[200px]'/>
+                            <AiFillPlusCircle className='absolute right-[-100px] text-safron text-[200px]' />
                             <img className='h-[500px] w-[600px] rounded-[50%] object-cover' src={docts} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }
