@@ -11,7 +11,7 @@ module.exports = {
        safronLight: "#dfc2ae"
       },
       backgroundImage: {
-        'gradient': 'linear-gradient(to right, #DFC2AE, transparent)',
+        'gradient': 'linear-gradient(to right, #c1b495, transparent)',
       },
       spacing: {
         'container': '100px', // Custom padding value for container

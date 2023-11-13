@@ -17,10 +17,10 @@ const Banner = () => {
           />
           </div>
           <div className="flex flex-col pr-8 gap-3">
-            <h1 className='text-2xl mb-4 text-prime md:text-[60px] xl:text-[60px] font-bold'>
+            <h1 className='text-2xl mb-4 md:text-[60px] xl:text-[60px] font-bold' style={{color:'#492e13'}}>
               A Modern approach
             </h1>
-            <h1 className='text-2xl mb-4 text-prime md:text-[60px] xl:text-[60px] font-bold'>
+            <h1 className='text-2xl mb-4 md:text-[60px] xl:text-[60px] font-bold' style={{color:'#492e13'}}>
               to Beauty
             </h1>
             <div className='flex justify-around items-center p-3 bg-white rounded-[30px]'>

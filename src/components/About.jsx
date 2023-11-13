@@ -29,16 +29,16 @@ const About = () => {
                 </div>
             </div>
             <div style={{ zIndex: "10" }}>
-                <div className='px-container'>
-                    <div>
-                        <h1 className='text-3xl text-prime uppercase'>
-                            PROFESSIONAL AESTHETIC
+                <div className='px-container mt-5'>
+                    <div className='mb-5'>
+                        <h1 className='text-5xl font-semibold uppercase' style={{color:'#754c23', lineHeight:'60px'}}>
+                            PROFESSIONAL AESTHETIC<br></br>
                             CLINIC IN BAHRAIN
                         </h1>
                     </div>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between'>
                         <div className='felx flex-col relative w-3/4'>
-                            <p className='text-prime text-2xl'>
+                            <p className='text-prime text-2xl mb-4 mt-12'>
                                 Dermacare is the only cosmetic clinic in Dubai that focuses exclusively on
                                 Hollywood-level non-surgical aesthetic treatments in Dubai. Using state-of-the-art
                                 technology and a bespoke approach, we have reimagined the traditional strategy for
