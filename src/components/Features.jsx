@@ -21,7 +21,7 @@ const Features = () => {
                             </button>
                         </div>
                         <div>
-                            <div className='w-5/12 flex justify-between items-center mt-5 shadow-2xl p-4 rounded-lg bg-[#e9a2a25b]'>
+                            <div className='w-5/12 flex justify-between items-center mt-5 shadow-2xl p-4 rounded-lg bg-[#f2e9e4]'>
 
                                 <div style={{ width: "40px", height: "40px", borderRadius: "5px", padding: "5px" }} className='py-1 flex justify-center items-center p-2 bg-white'>
                                     <FaLocationDot className='mt-2' />
@@ -32,7 +32,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className='w-full  relative'>
-                    <div className='w-full py-1 px-4 shadow-xl rounded-[30px] bg-[#e9a2a25b] h-[500px]'>
+                    <div className='w-full py-1 px-4 shadow-xl rounded-[30px] bg-[#f2e9e4] h-[500px]'>
                         {/* Card Content Goes Here */}
                         <h1 className='text-black px-[50px] pt-[50px] text-3xl uppercase'>View Here</h1>
                         <div className='grid grid-cols-2 gap-2'>
