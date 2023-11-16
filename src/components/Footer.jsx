@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='bg-safron flex flex-col md:flex-row 
         justify-around items-start px-4 md:px-8 py-8 w-full'>
             <div className='mb-4 md:mb-0 bg-black items-center'>
-                <img className='h-16 md:h-25' src={ftlogo} alt="" />
+                <img className='fst_logo' src={ftlogo} alt="" />
             </div>
             <div className='mb-4 md:mb-0 md:ml-8'>
                 <h1 className='text-lg md:text-xl uppercase text-white'>Get In Touch</h1>
@@ -19,8 +19,7 @@ const Footer = () => {
                         <AiFillHome className='text-3xl' />
                     </div>
                     <div>
-                        63 Al Thanya St, Villa 
-                        D,Manama, Baharan
+                    Dermacare 3rd floor, Building 3142,<br></br> road 4653, block 346, seef front, seef district.
                     </div>
                 </div>
                 <div className='flex justify-start items-center text-white gap-2 py-2'>

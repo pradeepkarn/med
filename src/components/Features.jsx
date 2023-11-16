@@ -8,9 +8,9 @@ const Features = () => {
         <div className='px-container'>
             <div className='flex items-center min-h-[600px] relative  gap-4 pt-4 pb-[150px]'>
                 <div className='px-4 w-9/12 mb-5'>
-                    <div className='flex flex-col justify-between gap-[100px]'>
+                    <div className='flex flex-col justify-between gap-[46px]' style={{width:"450px"}}>
                         <div>
-                            <h1 className='text-3xl'>
+                            <h1 className='text-3xl font-bold'>
                                 Taking care of your skin is more important than covering it up!
                             </h1>
 
@@ -21,12 +21,12 @@ const Features = () => {
                             </button>
                         </div>
                         <div>
-                            <div className='w-5/12 flex justify-between items-center mt-5 shadow-2xl p-4 rounded-lg bg-[#f2e9e4]'>
+                            <div className='flex justify-between items-center mt-5 shadow-2xl p-4 rounded-lg bg-[#f2e9e4]' style={{width: "400px"}}>
 
                                 <div style={{ width: "40px", height: "40px", borderRadius: "5px", padding: "5px" }} className='py-1 flex justify-center items-center p-2 bg-white'>
                                     <FaLocationDot className='mt-2' />
                                 </div>
-                                OUR LOCATION
+                                <p className='ms-3'>Dermacare 3rd floor, Building 3142, road 4653, block 346, seef front, seef district.</p>
                             </div>
                         </div>
                     </div>
@@ -34,14 +34,14 @@ const Features = () => {
                 <div className='w-full  relative'>
                     <div className='w-full py-1 px-4 shadow-xl rounded-[30px] bg-[#f2e9e4] h-[500px]'>
                         {/* Card Content Goes Here */}
-                        <h1 className='text-black px-[50px] pt-[50px] text-3xl uppercase'>View Here</h1>
+                        <h1 className='text-black px-[50px] pt-[50px] pb-[30px] text-2xl uppercase font-bold'>View Here</h1>
                         <div className='grid grid-cols-2 gap-2'>
                             <div className='w-full'>
                                 <img src={face} className='absolute top-[400px] left-[100px] shadow-lg rounded-lg shadow-black h-[200px] w-[300px] object-cover' alt="" />
                                 <img src={backgroundImage} className='absolute shadow-lg rounded-lg  left-[-100px] shadow-black h-[400px] w-[300px] object-cover' alt="" />
                             </div>
                             <div className='w-full'>
-                                <h2 className='text-black text-[30px] font-[500] uppercase right-0'>Before & After Gallery</h2>
+                                <h2 className='text-black text-[30px] font-[500] uppercase right-0 font-bold'>Before & After Gallery</h2>
                                 <h2 className='text-black text-[20px] font-[500] uppercase right-0'>REAL CLIENTS</h2>
                                 <p>
                                     As an experienced aesthetic clinic in Dubai, we have done

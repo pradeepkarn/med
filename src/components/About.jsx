@@ -2,6 +2,7 @@ import React from 'react'
 import abtfirst from '../images/aboutleft.jpeg'
 import abtsecond from '../images/abtrt.jpg';
 import docts from '../images/2docs.png';
+import doctors from '../images/doctors-homepage.jpg';
 import { AiFillCaretRight, AiFillPlusCircle } from 'react-icons/ai';
 
 const About = () => {
@@ -56,7 +57,7 @@ const About = () => {
                         </div>
                         <div className='relative'>
                             <AiFillPlusCircle className='absolute right-[-100px] text-safron text-[200px]' />
-                            <img className='h-[500px] w-[600px] rounded-[50%] object-cover' src={docts} alt="" />
+                            <img className='h-[500px] w-[600px] rounded-[50%] object-cover' src={doctors} alt="" />
                         </div>
                     </div>
                 </div>
