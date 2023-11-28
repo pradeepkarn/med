@@ -1,7 +1,6 @@
 import React from 'react';
 import backgroundImage from '../images/banner.jpg';
 import womanWithLeaf from '../images/woman-with-leafe.jpg';
-import shape from '../images/shape.png';
 import { AiOutlinePlus, AiOutlineUser } from 'react-icons/ai';
 
 const Banner = () => {

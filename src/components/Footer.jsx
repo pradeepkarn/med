@@ -73,9 +73,11 @@ const Footer = () => {
                 </div>
             </div>
               {/* WhatsApp icon */}
- <div className="whatsapp-icon" target="_blank">
- <img src={whatsapp} alt="WhatsApp Icon" />
-</div>
+              <div className="whatsapp-chat">
+   <a href="https://wa.me/+97337798899?text=Hello%20there!" target="_blank">
+   <img src={whatsapp} alt="WhatsApp Icon" width="60px" />
+   </a>
+ </div>
         </div>
     );
 };

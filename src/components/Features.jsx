@@ -1,9 +1,38 @@
-import React from 'react';
-import backgroundImage from '../images/feature.png';
-import face from '../images/face.jpg';
+import React, { useState } from 'react';
+import backgroundImage from '../images/before1.png';
+import backgroundImage2 from '../images/before2.jpg';
+import backgroundImage3 from '../images/before-tattoo-removal.jpg';
+import backgroundImage4 from '../images/before-lip-flip1.jpg';
+import backgroundImage5 from '../images/before-lip-flip2.jpg';
+import backgroundImage6 from '../images/before-lip-flip3.jpg';
+import face from '../images/after1.jpg';
+import face2 from '../images/after2.jpg';
+import face3 from '../images/after-tattoo-removal.jpg';
+import face4 from '../images/after-lip-flip1.jpg';
+import face5 from '../images/after-lip-flip2.jpg';
+import face6 from '../images/after-lip-flip3.jpg';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { FaLocationDot } from 'react-icons/fa6';
 const Features = () => {
+
+    const [images] = useState([
+        { face: face, background: backgroundImage },
+        { face: face2, background: backgroundImage2 },
+        { face: face3, background: backgroundImage3 },
+        { face: face4, background: backgroundImage4 },
+        { face: face5, background: backgroundImage5 },
+        { face: face6, background: backgroundImage6 },
+    ]);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const showPreviousImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
+    const showNextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
     return (
         <div className='px-container'>
             <div className='flex items-center min-h-[600px] relative  gap-4 pt-4 pb-[150px]'>
@@ -36,10 +65,18 @@ const Features = () => {
                         {/* Card Content Goes Here */}
                         <h1 className='text-black px-[50px] pt-[50px] pb-[30px] text-2xl uppercase font-bold'>View Here</h1>
                         <div className='grid grid-cols-2 gap-2'>
-                            <div className='w-full'>
-                                <img src={face} className='absolute top-[400px] left-[100px] shadow-lg rounded-lg shadow-black h-[200px] w-[300px] object-cover' alt="" />
-                                <img src={backgroundImage} className='absolute shadow-lg rounded-lg  left-[-100px] shadow-black h-[400px] w-[300px] object-cover' alt="" />
-                            </div>
+                        <div className='w-full'>
+                <img
+                    src={images[currentImageIndex].face}
+                    className='absolute top-[400px] left-[100px] shadow-lg rounded-lg shadow-black h-[200px] w-[300px] object-cover'
+                    alt=''
+                />
+                <img
+                    src={images[currentImageIndex].background}
+                    className='absolute shadow-lg rounded-lg left-[-100px] shadow-black h-[400px] w-[300px] object-cover'
+                    alt=''
+                />
+            </div>
                             <div className='w-full'>
                                 <h2 className='text-black text-[30px] font-[500] uppercase right-0 font-bold'>Before & After Gallery</h2>
                                 <h2 className='text-black text-[20px] font-[500] uppercase right-0'>REAL CLIENTS</h2>
@@ -49,19 +86,23 @@ const Features = () => {
                                     the results speak for themselves.
                                 </p>
                                 <div className='flex gap-5 py-5 items-center'>
-
-                                    <AiOutlineArrowLeft className='border-black text-[30px] border-[2px] rounded-[50%]' />
-
-                                    <AiOutlineArrowRight className='border-black text-[30px] border-[2px] rounded-[50%]' />
-
-                                </div>
+                <button className='border-black text-[30px] border-[2px] rounded-[50%]' onClick={showPreviousImage}>
+                <AiOutlineArrowLeft></AiOutlineArrowLeft>
+                </button>
+                <button className='border-black text-[30px] border-[2px] rounded-[50%]' onClick={showNextImage}>
+                <AiOutlineArrowRight></AiOutlineArrowRight>
+                </button>
+            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     );
 };
+
+
 
 export default Features;
